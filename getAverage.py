@@ -14,8 +14,7 @@ def main():
     file_path = sys.argv[1]
 
     try:
-        with open(file_path, 'r') as file:
-            numbers = readFile(file)
+       numbers = readFile(file_path)
 
     except FileNotFoundError:
         print("File not found:", file_path)
